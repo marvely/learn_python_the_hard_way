@@ -1,0 +1,17 @@
+class X(Y)
+"make a class named X that is-a Y" <--- so Y is the parent class?
+
+class X(object): def __init__(self, J)
+"class X has-a __init__ that takes self and J parameters"
+
+class X(object): def M(self, J)
+"class X has-a function named M that takes self and J parameters"
+
+foo = X()
+"set foo to an instance of class X"
+
+foo.M(J)
+"from foo get the M function, and call it with parameters self, J"
+
+foo.K = Q
+"from foo get the K attribute and set it to Q"
